@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "portalcraft_bridge",
+  "version": "${version}",
+  "name": "PortalCraft Bridge",
+  "description": "Fabric-side host bridge for a Minecraft + Portal mashup prototype.",
+  "authors": [
+    "OpenAI"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.portalcraft.bridge.PortalCraftClientMod"
+    ]
+  },
+  "mixins": [
+    "portalcraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
